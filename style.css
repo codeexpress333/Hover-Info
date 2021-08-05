@@ -1,0 +1,63 @@
+.container {
+	position: absolute;
+	padding-top: 45px;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: #00a096;
+}
+
+.inside {
+	width: 200px;
+	height: 200px;
+	display: inline-block;
+	position: relative;
+	margin-top: 0px;
+}
+
+.hover .image {
+	transition: all 200ms ease-in;
+	transform-origin: 50% 20%;
+	transform: scale(1);
+	width: 200px;
+	height: 200px;
+	position: absolute;
+	z-index: 2;
+	left: 0;
+}
+
+.hover .image img {
+	height: 200px;
+	width: 200px;
+	object-fit: cover;
+}
+
+.hover:hover .image {
+	transition: all 200ms ease-in;
+	transform: scale(0.6);
+}
+
+.content {
+	width: 180px;
+	padding: 10px;
+	bottom: 0;
+	position: absolute;
+	z-index: 1;
+	text-align: left;
+}
+
+.text {
+	color: #ffffff;
+	font-size: 25px;
+	font-weight: 800;
+	font-family: 'Roboto';
+}
+
+.midtext {
+	color: #ffffff;
+	font-size: 15px;
+	font-weight: 400;
+	font-family: 'Roboto';
+}
+
